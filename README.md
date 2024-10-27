@@ -17,7 +17,7 @@ As the automation and intelligent evolution of remote sensing interpretation sys
 
 To address the above issues, we have conducted the following works.
 
-## Full list of our works
+## List of our works
 ### 1. Review
 - L. Chen, Z. Xu, Q. Li, J. Peng, S. Wang and H. Li, "An Empirical Study of Adversarial Examples on Remote Sensing Image Scene Classification," in IEEE Transactions on Geoscience and Remote Sensing, vol. 59, no. 9, pp. 7419-7433, Sept. 2021, doi: 10.1109/TGRS.2021.3051641.
 RSI forgery detection
@@ -31,4 +31,8 @@ RSI forgery detection
 #### 2.2 Adversarial example recognition
 - Li Chen, Qi Li, Weiye Chen, Zeyu Wang, and Haifeng Li. 2022. A data‐driven adversarial examples recognition framework via adversarial feature genomes. Int. J. Intell. Syst. 37, 9 (September 2022), 6438–6462. https://doi.org/10.1002/int.22850
 
-To be added later...
+
+### 3. Model level
+#### 3.1 Defence methods against adversarial samples
+- L. Chen, J. Xiao, P. Zou and H. Li, "Lie to Me: A Soft Threshold Defense Method for Adversarial Examples of Remote Sensing Images," in IEEE Geoscience and Remote Sensing Letters, vol. 19, pp. 1-5, 2022, Art no. 8016905, doi: 10.1109/LGRS.2021.3096244.
+- To be added later...
