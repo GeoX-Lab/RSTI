@@ -1,0 +1,33 @@
+_base_ = [
+    '../_base_/models/conformer/base-p16.py',
+    'my_base.py',
+]
+#     # '../_base_/datasets/imagenet_bs64_swin_224.py',
+#     '../_base_/schedules/imagenet_bs1024_adamw_conformer.py',
+#     '../_base_/default_runtime.py'
+# ]
+
+# train_dataloader = dict(batch_size=64)
+# model settings
+model = dict(
+    # type='ImageClassifier',
+    backbone=dict(
+        type='Conformer', arch='base', drop_path_rate=0.1, init_cfg=None),
+    neck=None,
+    head=dict(
+        type='ConformerHead',
+        num_classes=2,
+        in_channels=[1536, 576],
+        init_cfg=None,
+        loss=dict(
+            type='LabelSmoothLoss', label_smooth_val=0.1, mode='original'),
+        cal_acc=False),
+    init_cfg=[
+        dict(type='TruncNormal', layer='Linear', std=0.02, bias=0.),
+        dict(type='Constant', layer='LayerNorm', val=1., bias=0.)
+    ]
+    # train_cfg=dict(augments=[
+    #     dict(type='Mixup', alpha=0.8),
+    #     dict(type='CutMix', alpha=1.0)
+    # ]),
+)
