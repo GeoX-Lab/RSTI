@@ -1,8 +1,7 @@
 # RSTI
+**R**emote **S**ensing **T**rustworthy **I**ntelligence
 
 ## Overview
-Remote Sensing Trustworthy Intelligence
-
 This repository includes our research on Remote Sensing Trustworthy Intelligence.
 
 As the automation and intelligent evolution of remote sensing interpretation systems accelerate, the associated security and reliability risks are increasing. We primarily focus on the following challenges in trustworthy remote sensing interpretation:
